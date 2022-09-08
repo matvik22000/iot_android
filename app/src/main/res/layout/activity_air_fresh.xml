@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    tools:context=".AirFreshActivity"
+    android:id="@+id/parent">
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loadingMain"
+
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:textColor="@color/mainText"/>
+
+    <TextView
+        android:id="@+id/deviceRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deviceName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="20sp"
+        android:text="@string/loadingSecondary"
+        android:textColor="@color/secondaryText"
+
+        android:textSize="18sp" />
+
+
+    <com.gigamole.library.ShadowLayout
+        android:id="@+id/heaterShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deviceRoom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        app:sl_shadow_angle="90"
+        app:sl_shadow_color="#4591F399"
+        app:sl_shadow_distance="0dp"
+        app:sl_shadowed="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/heaterBtn"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150sp"
+            android:elevation="6dp"
+            android:paddingHorizontal="30sp"
+            android:paddingVertical="12sp"
+            android:shadowColor="@color/cardview_light_background"
+            android:text="@string/heater_on_off"
+            android:textColor="#BEFFFFFF"
+            android:textSize="20sp"
+
+            />
+    </com.gigamole.library.ShadowLayout>
+
+    <com.gigamole.library.ShadowLayout
+        android:id="@+id/alarmShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heaterShadow"
+        android:layout_marginTop="-105dp"
+        android:layout_centerHorizontal="true"
+        app:sl_shadow_angle="90"
+        app:sl_shadow_color="#4591F399"
+        app:sl_shadow_distance="0dp"
+        app:sl_shadowed="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="150sp"
+            android:elevation="6dp"
+            android:paddingHorizontal="30sp"
+            android:paddingVertical="12sp"
+            android:shadowColor="@color/cardview_light_background"
+            android:text="@string/alarm_on_off"
+            android:textColor="#BEFFFFFF"
+            android:textSize="20sp"
+
+            />
+
+    </com.gigamole.library.ShadowLayout>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loadingSecondary"
+        android:textColor="@color/secondaryText"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="100sp"
+
+        />
+
+</RelativeLayout>

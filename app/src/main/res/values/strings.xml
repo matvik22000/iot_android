@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Bebra House</string>
+    <string name="iot_controller">Bebrocha...</string>
+    <string name="heater_on_off">Heater</string>
+    <string name="alarm_on_off">ALARM</string>
+    <string name="loadingMain">Loading...</string>
+    <string name="loadingSecondary">loading...</string>
+    <string name="download_speed">Download Speed</string>
+    <string name="upload_speed">Upload Speed</string>
+    <string name="ping">Ping</string>
+    <string name="cpu_temperature">CPU Temperature</string>
+    <string name="celsius">°C</string>
+    <string name="mb_temperature">MB Temperature</string>
+    <string name="pci_adapter">PCI Adapter</string>
+    <string name="cpu_fan">CPU Fan</string>
+    <string name="rpm">RPM</string>
+</resources>

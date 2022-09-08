@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/downloadCard"
+        android:layout_width="335sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#1A1A1A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="10sp"
+        android:layout_marginHorizontal="50sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="50sp"
+                android:paddingStart="25sp"
+                android:paddingTop="10sp"
+                android:text="5.4"
+                android:textColor="@color/mainText"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_marginStart="-45dp"
+                android:layout_toEndOf="@id/value"
+                android:paddingVertical="13sp"
+                android:text="Mb/s"
+                android:textColor="@color/secondaryText"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/comparative_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/value"
+                android:layout_marginTop="-5sp"
+                android:layout_marginBottom="5sp"
+                android:gravity="end"
+                android:paddingStart="26sp"
+                android:paddingEnd="0sp"
+                android:paddingVertical="3sp"
+                android:text="high:"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/secondaryText"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/comparative_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/comparative_name"
+                android:layout_marginHorizontal="2sp"
+                android:layout_toEndOf="@+id/comparative_name"
+                android:paddingVertical="3sp"
+                android:text="10"
+                android:textColor="@color/secondaryText"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="14sp"
+                android:text="@string/download_speed"
+                android:textColor="@color/secondaryText"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</RelativeLayout>
